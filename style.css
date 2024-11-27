@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: whitesmoke;
+}
+.page{
+    max-width: 1600px;
+    min-height: 100vh;
+    margin: 0 auto;
+    background-color: lightgray;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 50px;
+}
+h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+p{
+    font-size: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+.text{
+    width: 70%;
+
+}
+.menu{
+    width: 30%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+}
+.menu1{
+    border: 2px solid transparent;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.menu2{
+    border: 2px solid transparent;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+h3{
+    color: whitesmoke;
+    background-color: rgb(5, 63, 110);
+    border-bottom: 1px solid rgb(5, 63, 110);
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+}
+a{
+    color: rgb(5, 63, 110);
+    background-color: lightblue;
+    border-bottom: 1px solid rgb(5, 63, 110);
+    font-size: 20px;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    text-decoration: none;
+}
+a:hover{
+    color: blueviolet;
+    box-shadow: inset 1300px 10px 10px 20px rgb(133, 168, 180);
+}
+.end_line{
+    border-bottom: none;
+}
+
+/* ================================================================================= */
+
+@media (max-width: 1063px) {
+    .page{
+        gap: 10px;
+        padding: 50px 10px;
+    }
+}
+@media (max-width: 972px) {
+    h3{
+        padding: 10px 2px;
+        font-size: 18px;
+    }
+    a{
+        padding: 10px 2px;
+        font-size: 18px;
+    }
+}
+@media (max-width: 833px) {
+    h3{
+        padding: 10px 2px;
+        font-size: 15px;
+    }
+    a{
+        padding: 10px 2px;
+        font-size: 15px;
+    }
+}
+@media (max-width: 799px) {
+    .page{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .text{
+        width: 100%;
+    }
+    .menu{
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+    }
+    .menu1{
+        width: 50%;
+    }
+    .menu2{
+        width: 50%;
+    }
+    h3{
+        font-size: 20px;
+        padding: 10px;
+    }
+    a{
+        font-size: 20px;
+        padding: 10px;
+    }
+}
+@media (max-width: 599px) {
+    .menu{
+        flex-direction: column;
+    }
+    .menu1{
+        width: 100%;
+    }
+    .menu2{
+        width: 100%;
+    }
+}
